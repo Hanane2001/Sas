@@ -30,6 +30,10 @@ void Factorielle(){
     int Fact=1;
     printf("Entrez un nombre: ");
     scanf(" %d",&n);
+    if (n<0) {
+        printf("Erreur\n");
+        return;
+    }
     for(i=1;i<=n;i++){
         Fact*=i;
     }

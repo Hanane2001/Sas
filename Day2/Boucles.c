@@ -340,6 +340,10 @@ void Factorielle(){
     int fact=1;
     printf("Entrez n: ");
     scanf("%d",&n);
+    if (n<0) {
+        printf("Erreur\n");
+        return;
+    }
     for(i=1;i<=n;i++){
         fact*=i;
     }
